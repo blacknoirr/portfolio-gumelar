@@ -41,7 +41,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
     <div className="max-w-6xl mx-auto px-6 py-6 lg:py-16">
       <Link
         href="/work"
-        className="text-lg font-medium text-gray-600 hover:text-black transition-colors mb-2 md:mb-4 inline-block"
+        className="text-xl xl:text-2xl font-medium text-gray-600 hover:text-black transition-colors mb-2 md:mb-4 inline-block"
       >
         ← Back to Work
       </Link>
@@ -52,12 +52,12 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             {project.title}
           </h1>
           <div className="flex items-center gap-4 flex-wrap">
-            <span className="text-sm px-3 py-1 rounded-full bg-black text-white">
+            <span className="text-base md:text-lg px-3 py-1 rounded-full bg-black text-white">
               {project.category}
             </span>
             <div className="flex items-center gap-2 flex-wrap">
               {project.tags.map((tag) => (
-                <span key={tag} className="text-sm text-gray-600">
+                <span key={tag} className="text-base md:text-lg text-gray-600">
                   {tag}
                   {project.tags.indexOf(tag) < project.tags.length - 1
                     ? " ·"
@@ -79,12 +79,12 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
         </div>
 
         <div className="space-y-6">
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
             {project.description}
           </p>
 
           <div className="prose prose-sm max-w-none">
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
               {project.content}
             </p>
           </div>
@@ -114,7 +114,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
         <div className="pt-8 border-t border-gray-200">
           <Link
             href="/work"
-            className="text-lg font-medium text-gray-600 hover:text-black transition-colors"
+            className="text-xl xl:text-2xl font-medium text-gray-600 hover:text-black transition-colors"
           >
             ← Back to all projects
           </Link>

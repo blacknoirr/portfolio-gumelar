@@ -21,16 +21,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
         <div className="space-y-2">
           <div className="flex items-start justify-between gap-2">
-            <h3 className="text-base md:text-lg lg:text-xl font-medium text-black group-hover:text-gray-700 transition-colors">
+            <h3 className="text-xl xl:text-2xl  font-medium text-black group-hover:text-gray-700 transition-colors">
               {project.title}
             </h3>
           </div>
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-sm md:text-base px-3 py-1 rounded-full bg-black text-white">
+            <span className="text-base md:text-lg px-3 py-1 rounded-full bg-black text-white">
               {project.category}
             </span>
           </div>
-          <p className="text-sm md:text-base text-gray-600 line-clamp-2">
+          <p className="text-base xl:text-lg text-gray-600 line-clamp-2">
             {project.description}
           </p>
         </div>

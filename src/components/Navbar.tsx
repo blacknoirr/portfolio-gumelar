@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
-      <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-2 md:py-6 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.png"
@@ -27,9 +27,9 @@ export default function Navbar() {
         <div className="flex items-center gap-4 md:gap-8">
           <Link
             href="/work"
-            className={`text-sm md:text-md lg:text-lg transition-colors ${
+            className={`text-base md:text-lg transition-colors ${
               isActive("/work")
-                ? "text-black font-medium"
+                ? "text-black font-bold"
                 : "text-gray-600 hover:text-black"
             }`}
           >
@@ -37,9 +37,9 @@ export default function Navbar() {
           </Link>
           <Link
             href="/about"
-            className={`text-sm md:text-md lg:text-lg transition-colors ${
+            className={`text-base md:text-lg transition-colors ${
               isActive("/about")
-                ? "text-black font-medium"
+                ? "text-black font-bold"
                 : "text-gray-600 hover:text-black"
             }`}
           >
@@ -47,9 +47,9 @@ export default function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className={`text-sm md:text-md lg:text-lg transition-colors ${
+            className={`text-base md:text-lg transition-colors ${
               isActive("/contact")
-                ? "text-black font-medium"
+                ? "text-black font-bold"
                 : "text-gray-600 hover:text-black"
             }`}
           >

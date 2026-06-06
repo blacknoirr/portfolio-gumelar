@@ -11,7 +11,7 @@ export default function Home() {
         <h1 className="text-5xl md:text-6xl font-semibold leading-tight tracking-tight">
           Gumelar Adi Setia
         </h1>
-        <p className="text-sm md:text-base xl:text-xl text-gray-600 max-w-2xl leading-relaxed">
+        <p className="text-lg xl:text-xl text-gray-600 max-w-2xl leading-relaxed">
           A product designer passionate about creating thoughtful, user-centered
           experiences. Specialized in UI/UX design, product strategy, and visual
           storytelling.

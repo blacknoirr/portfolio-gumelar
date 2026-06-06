@@ -24,7 +24,7 @@ export default function WorkPage() {
         <div className="flex items-center gap-1 flex-wrap">
           <button
             onClick={() => setSelectedCategory("All")}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+            className={`px-4 py-2 rounded-full text-base md:text-lg font-medium transition-all ${
               selectedCategory === "All"
                 ? "bg-black text-white"
                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -36,7 +36,7 @@ export default function WorkPage() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+              className={`px-4 py-2 rounded-full text-base md:text-lg font-medium transition-all ${
                 selectedCategory === category
                   ? "bg-black text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"

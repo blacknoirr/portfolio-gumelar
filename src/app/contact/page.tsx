@@ -16,10 +16,10 @@ export default function ContactPage() {
           <div>
             <h2 className="text-sm font-semibold text-black mb-2">Email</h2>
             <a
-              href="mailto:hello@gumelaradi.com"
+              href="mailto:setiagumelaradi@gmail.com"
               className="text-gray-600 hover:text-black transition-colors"
             >
-              hello@gumelaradi.com
+              setiagumelaradi@gmail.com
             </a>
           </div>
 
@@ -27,15 +27,7 @@ export default function ContactPage() {
             <h2 className="text-sm font-semibold text-black mb-2">Social</h2>
             <div className="space-y-2">
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-gray-600 hover:text-black transition-colors"
-              >
-                Twitter
-              </a>
-              <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/gumelaradisetia903/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-gray-600 hover:text-black transition-colors"
@@ -43,7 +35,7 @@ export default function ContactPage() {
                 LinkedIn
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/gmlradii/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-gray-600 hover:text-black transition-colors"

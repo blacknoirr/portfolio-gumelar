@@ -38,10 +38,10 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
+    <div className="max-w-6xl mx-auto px-6 py-6 lg:py-16">
       <Link
         href="/work"
-        className="text-sm text-gray-600 hover:text-black transition-colors mb-12 inline-block"
+        className="text-lg font-medium text-gray-600 hover:text-black transition-colors mb-2 md:mb-4 inline-block"
       >
         ← Back to Work
       </Link>
@@ -84,7 +84,9 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
           </p>
 
           <div className="prose prose-sm max-w-none">
-            <p className="text-gray-600 leading-relaxed">{project.content}</p>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              {project.content}
+            </p>
           </div>
         </div>
 
@@ -112,7 +114,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
         <div className="pt-8 border-t border-gray-200">
           <Link
             href="/work"
-            className="text-sm text-gray-600 hover:text-black transition-colors"
+            className="text-lg font-medium text-gray-600 hover:text-black transition-colors"
           >
             ← Back to all projects
           </Link>

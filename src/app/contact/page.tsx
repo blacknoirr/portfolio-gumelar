@@ -1,11 +1,13 @@
 export default function ContactPage() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
-      <h1 className="text-4xl md:text-5xl font-semibold mb-12">Contact</h1>
+    <div className="max-w-6xl mx-auto px-6 py-6 lg:py-16">
+      <h1 className="text-4xl md:text-5xl font-semibold mb-4 md:mb-8">
+        Contact
+      </h1>
 
       <div className="space-y-12">
         <div>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+          <p className="text-sm md:text-base  text-gray-700 leading-relaxed mb-8">
             I'm always interested in hearing about new projects and
             opportunities. Whether you have a question or just want to say
             hello, feel free to reach out.

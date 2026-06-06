@@ -24,10 +24,10 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-4 md:gap-8">
           <Link
             href="/work"
-            className={`text-sm transition-colors ${
+            className={`text-sm md:text-md lg:text-lg transition-colors ${
               isActive("/work")
                 ? "text-black font-medium"
                 : "text-gray-600 hover:text-black"
@@ -37,7 +37,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/about"
-            className={`text-sm transition-colors ${
+            className={`text-sm md:text-md lg:text-lg transition-colors ${
               isActive("/about")
                 ? "text-black font-medium"
                 : "text-gray-600 hover:text-black"
@@ -47,7 +47,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className={`text-sm transition-colors ${
+            className={`text-sm md:text-md lg:text-lg transition-colors ${
               isActive("/contact")
                 ? "text-black font-medium"
                 : "text-gray-600 hover:text-black"

@@ -1,12 +1,14 @@
 export default function AboutPage() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
-      <h1 className="text-4xl md:text-5xl font-semibold mb-12">About</h1>
+    <div className="max-w-6xl mx-auto px-6 py-6 lg:py-16 ">
+      <h1 className="text-4xl md:text-5xl font-semibold mb-4 md:mb-8">About</h1>
 
       <div className="space-y-8 text-gray-700">
         <div>
-          <h2 className="text-xl font-semibold text-black mb-4">Who I Am</h2>
-          <p className="leading-relaxed">
+          <h2 className="text-base xl:text-xl font-semibold text-black mb-2 md:mb-4">
+            Who I Am
+          </h2>
+          <p className="leading-relaxed text-sm md:text-base">
             I'm a product designer with a passion for creating beautiful,
             intuitive digital experiences. With a background in both design and
             technology, I approach problems holistically, considering both
@@ -15,8 +17,10 @@ export default function AboutPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-black mb-4">What I Do</h2>
-          <p className="leading-relaxed">
+          <h2 className="text-base xl:text-xl font-semibold text-black mb-2 md:mb-4">
+            What I Do
+          </h2>
+          <p className="leading-relaxed text-sm md:text-base">
             I specialize in product design, user experience research, and visual
             identity systems. My work spans across mobile applications, web
             platforms, and brand design. I'm committed to user-centered design
@@ -26,10 +30,10 @@ export default function AboutPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-black mb-4">
+          <h2 className="text-base xl:text-xl font-semibold text-black mb-2 md:mb-4">
             Beyond Design
           </h2>
-          <p className="leading-relaxed">
+          <p className="leading-relaxed text-sm md:text-base">
             When I'm not designing, you can find me exploring photography,
             studying design trends, or working on side projects. I believe
             continuous learning is essential in staying creative and pushing the
@@ -38,10 +42,10 @@ export default function AboutPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-black mb-4">
+          <h2 className="text-base xl:text-xl font-semibold text-black mb-2 md:mb-4">
             Let's Connect
           </h2>
-          <p className="leading-relaxed">
+          <p className="leading-relaxed text-sm md:text-base">
             Interested in working together? I'd love to hear about your project.
             Feel free to reach out via the contact page or connect with me on
             social media.

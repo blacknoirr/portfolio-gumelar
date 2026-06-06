@@ -17,9 +17,9 @@ export default function WorkPage() {
   }, [selectedCategory]);
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16">
-      <div className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-semibold mb-8">Work</h1>
+    <div className="max-w-6xl mx-auto px-6 py-6 lg:py-16">
+      <div className="mb-4 md:mb-8">
+        <h1 className="text-4xl md:text-5xl font-semibold mb-4">Work</h1>
 
         <div className="flex items-center gap-1 flex-wrap">
           <button

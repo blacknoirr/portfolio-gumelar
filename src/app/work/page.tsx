@@ -17,7 +17,7 @@ export default function WorkPage() {
   }, [selectedCategory]);
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-6 lg:py-16">
+    <div className="max-w-7xl mx-auto px-6 py-6 md:py-16">
       <div className="mb-4 md:mb-8">
         <h1 className="text-4xl md:text-5xl font-semibold mb-4">Work</h1>
 

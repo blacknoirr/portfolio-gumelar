@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: "Gumelar Adi - Product Designer",
   description:
     "Portfolio of Gumelar Adi, a product designer specializing in UI/UX, product design, and photography.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

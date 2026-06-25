@@ -72,7 +72,6 @@ export function MasonryGallery({
                 src={image.url}
                 alt={`${projectTitle} gallery image fallback ${index + 1}`}
                 fill
-                unoptimized
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
                 priority={index < 2}
@@ -103,7 +102,6 @@ export function MasonryGallery({
                 src={image.url}
                 alt={`${projectTitle} gallery image ${rowIndex + 1}`}
                 fill
-                unoptimized
                 sizes="100vw"
                 className="object-cover transition-transform duration-300 hover:scale-105"
               />
@@ -138,7 +136,6 @@ export function MasonryGallery({
                     src={image.url}
                     alt={`${projectTitle} gallery image ${rowIndex + 1}-${itemIndex + 1}`}
                     fill
-                    unoptimized
                     sizes={`${Math.round(itemWidth)}px`}
                     className="object-cover transition-transform duration-300 hover:scale-105"
                   />

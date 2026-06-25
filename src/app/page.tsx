@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
 
@@ -6,16 +7,33 @@ export default function Home() {
   const recentProjects = projects.slice(0, 2);
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-9 md:py-20">
-      <div className="space-y-6 mb-8">
-        <h1 className="text-5xl md:text-6xl font-semibold leading-tight tracking-tight">
-          Gumelar Adi Setia
-        </h1>
-        <p className="text-lg xl:text-xl text-gray-600 max-w-2xl leading-relaxed">
-          A product designer passionate about creating thoughtful, user-centered
-          experiences. Specialized in UI/UX design, product strategy, and visual
-          storytelling.
-        </p>
+    <div className="max-w-7xl mx-auto px-6 py-4 md:py-16">
+      <div className="flex flex-col-reverse md:flex-row md:justify-between gap-8 mb-8">
+        {/* Text */}
+        <div className="space-y-2 md:space-y-4 md:self-start">
+          <h1 className="text-5xl text-[#FF450D] md:text-6xl font-semibold leading-tight tracking-tight">
+            Well Hello,
+          </h1>
+          <h1 className="text-5xl md:text-6xl font-semibold leading-tight tracking-tight">
+            I'm Gumelar Adi Setia
+          </h1>
+          <p className="text-lg xl:text-xl text-gray-600 max-w-2xl leading-relaxed">
+            A product designer passionate about creating thoughtful,
+            user-centered experiences. Specialized in UI/UX design, product
+            strategy, and visual storytelling.
+          </p>
+        </div>
+        {/* Photo */}
+        <div className="self-center h-56 md:self-stretch flex-shrink-0">
+          <Image
+            src="/profile.jpg"
+            alt="Gumelar Adi Setia"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="h-full w-auto"
+          />
+        </div>
       </div>
 
       <div className="my-8">

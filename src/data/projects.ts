@@ -1,4 +1,11 @@
 export type Category = "Product Design" | "Photography";
+export type ImageOrientation = "landscape" | "portrait";
+
+export interface GalleryImage {
+  url: string;
+  orientation?: ImageOrientation;
+  aspectRatio?: number;
+}
 
 export interface Project {
   id: string;
@@ -9,7 +16,7 @@ export interface Project {
   description: string;
   tags: string[];
   content: string;
-  gallery?: string[];
+  gallery?: (string | GalleryImage | (string | GalleryImage)[])[];
 }
 
 export const projects: Project[] = [
@@ -25,72 +32,97 @@ export const projects: Project[] = [
     content:
       "Terseeart Communal Space is a community-centered platform that bridges artists and art enthusiasts in one digital ecosystem. The project focuses on fostering collaboration, showcasing creative works, and simplifying event participation through an intuitive user experience. The design process involved user research, information architecture planning, wireframing, prototyping, and usability testing to create an engaging and accessible platform for the creative community.",
     gallery: [
-      "/project-terseeart/gallery-1.jpg",
-      "/project-terseeart/gallery-2.jpg",
-      "/project-terseeart/gallery-3.jpg",
-      "/project-terseeart/gallery-4.jpg",
+      [
+        "/project-terseeart/landscape1.png",
+        "/project-terseeart/landscape2.png",
+      ],
+      ["/project-terseeart/landscape3.png"],
+      ["/project-terseeart/landscape4.png"],
+    ],
+  },
+  {
+    id: "2",
+    slug: "workpro-hrms",
+    title: "Workpro Human Resource Management System",
+    category: "Product Design",
+    coverImage: "/project-workpro/cover-landscape.png",
+    description:
+      "WorkPro is a web-based workforce management platform developed at Gunung Amal Solution International that helps companies streamline employee management, operational workflows, and internal business processes in a more efficient and organized way. The platform is designed to improve productivity by centralizing workforce-related activities into a single digital ecosystem.",
+    tags: ["UI/UX", "Website", "Responsive", "Figma"],
+    content: "",
+    gallery: [
+      [
+        "/project-terseeart/landscape1.png",
+        "/project-terseeart/landscape2.png",
+      ],
+      [
+        "/project-terseeart/landscape3.png",
+        "/project-terseeart/landscape4.png",
+      ],
     ],
   },
   {
     id: "3",
-    slug: "landscape-photography",
-    title: "Landscape Photography Series",
+    slug: "joy-threaters",
+    title: "Joy Threaters",
     category: "Photography",
-    coverImage:
-      "https://placehold.co/1200x800/f5f5f5/999999?text=Landscape+Photography",
+    coverImage: "/project-joythreaters/cover1.jpg",
     description:
-      "A collection of landscape photographs capturing the beauty of natural environments.",
-    tags: ["Photography", "Nature", "Landscapes", "Post-processing"],
-    content:
-      "This photography series explores the interplay of light, color, and composition in natural landscapes. Each image was carefully composed and post-processed to enhance mood and visual impact while maintaining authenticity. The collection spans various seasons and locations, showcasing the diverse beauty of the natural world.",
+      "Produced visual documentation for live music gigs, focusing on authentic storytelling, artist presence, crowd engagement, and overall event atmosphere. Experienced in working within fast-paced environments while creating visually impactful imagery for promotional and archival purposes.",
+    tags: ["Photography", "Events", "Gigs", "Concerts"],
+    content: "",
     gallery: [
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Mountain+Landscape",
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Lake+Landscape",
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Forest+Landscape",
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Desert+Landscape",
+      {
+        url: "/project-joythreaters/image1.jpg",
+        orientation: "landscape",
+      },
+      {
+        url: "/project-joythreaters/image2.jpg",
+        orientation: "landscape",
+      },
+      {
+        url: "/project-joythreaters/image3.jpg",
+        orientation: "landscape",
+      },
+      {
+        url: "/project-joythreaters/image7.jpg",
+        orientation: "portrait",
+      },
+      {
+        url: "/project-joythreaters/image6.jpg",
+        orientation: "portrait",
+      },
+      {
+        url: "/project-joythreaters/image4.jpg",
+        orientation: "landscape",
+      },
+      {
+        url: "/project-joythreaters/image5.jpg",
+        orientation: "portrait",
+      },
     ],
   },
   {
     id: "4",
-    slug: "ecommerce-platform",
-    title: "E-Commerce Platform",
-    category: "Product Design",
-    coverImage:
-      "https://placehold.co/1200x800/f5f5f5/999999?text=E-Commerce+Platform",
-    description:
-      "Design and prototyping of a modern e-commerce platform with focus on conversion optimization.",
-    tags: ["E-Commerce", "Conversion", "Checkout Flow", "Prototyping"],
-    content:
-      "Created a full product design for an e-commerce platform, focusing on streamlining the shopping experience and optimizing conversion rates. The design includes an intuitive product discovery system, simplified checkout process, and personalized recommendations. User testing showed a 60% reduction in cart abandonment and a 35% increase in average order value.",
-    gallery: [
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Product+Discovery",
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Product+Details+Page",
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Shopping+Cart",
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Checkout+Flow",
-    ],
-  },
-  {
-    id: "6",
-    slug: "urban-photography",
-    title: "Urban Photography Project",
+    slug: "mezita-brand",
+    title: "Mezita Catalogue",
     category: "Photography",
-    coverImage:
-      "https://placehold.co/1200x800/f5f5f5/999999?text=Urban+Photography",
+    coverImage: "/project-mezita/cover1.jpg",
     description:
-      "Documentary-style photography exploring urban architecture and street life.",
-    tags: [
-      "Street Photography",
-      "Architecture",
-      "Documentary",
-      "Black & White",
-    ],
-    content:
-      "A documentary photography project capturing the essence of urban environments. Through careful observation and technical precision, these images reveal the hidden beauty in everyday city scenes, architectural details, and human interactions within urban landscapes. The series combines both color and black & white photography.",
+      "Mezita is a fashion brand focused on delivering stylish and contemporary apparel with an emphasis on visual identity and product presentation. In this project, I worked on creating a catalogue photography series aimed at showcasing the brand's products through strong visual storytelling and clean commercial aesthetics.",
+    tags: ["Product Photography", "Fashion", "Commercial", "Catalogue"],
+    content: "",
     gallery: [
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Street+Photography+1",
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Urban+Architecture",
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Street+Photography+2",
-      "https://placehold.co/1200x700/f5f5f5/999999?text=Urban+Details",
+      [
+        "/project-mezita/landscape1.jpg",
+        "/project-mezita/portrait1.jpg",
+        "/project-mezita/portrait2.jpg",
+      ],
+      [
+        "/project-mezita/portrait3.jpg",
+        "/project-mezita/portrait4.jpg",
+        "/project-mezita/landscape2.jpg",
+      ],
     ],
   },
 ];

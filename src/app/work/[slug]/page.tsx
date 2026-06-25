@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/data/projects";
+import { MasonryGallery } from "@/components/MasonryGallery";
 import { notFound } from "next/navigation";
 
 interface ProjectDetailPageProps {
@@ -38,7 +39,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-6 lg:py-16">
+    <div className="max-w-7xl mx-auto px-6 py-6 md:py-16">
       <Link
         href="/work"
         className="text-xl xl:text-2xl font-medium text-gray-600 hover:text-black transition-colors mb-2 md:mb-4 inline-block"
@@ -93,21 +94,10 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
         {project.gallery && project.gallery.length > 0 && (
           <div className="pt-8 border-t border-gray-200">
             <h2 className="text-2xl font-semibold mb-8">Gallery</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {project.gallery.map((image, index) => (
-                <div
-                  key={index}
-                  className="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-100"
-                >
-                  <Image
-                    src={image}
-                    alt={`${project.title} gallery image ${index + 1}`}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              ))}
-            </div>
+            <MasonryGallery
+              items={project.gallery}
+              projectTitle={project.title}
+            />
           </div>
         )}
 

@@ -7,20 +7,20 @@ export default function Home() {
   const recentProjects = projects.slice(0, 2);
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-4 md:py-16">
+    <div className="max-w-7xl mx-auto px-6 py-6 md:py-16">
       <div className="flex flex-col-reverse md:flex-row md:justify-between gap-8 mb-8">
         {/* Text */}
-        <div className="space-y-2 md:space-y-4 md:self-start">
+        <div className="space-y-4 md:self-start">
           <h1 className="text-5xl text-[#FF450D] md:text-6xl font-semibold leading-tight tracking-tight">
             Well Hello,
           </h1>
-          <h1 className="text-5xl md:text-6xl font-semibold leading-tight tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
             I'm Gumelar Adi Setia
           </h1>
           <p className="text-lg xl:text-xl text-gray-600 max-w-2xl leading-relaxed">
-            A product designer passionate about creating thoughtful,
-            user-centered experiences. Specialized in UI/UX design, product
-            strategy, and visual storytelling.
+            A product designer passionate about creating thoughtful, user-centered
+            experiences. Specialized in UI/UX design, product strategy, and visual
+            storytelling.
           </p>
         </div>
         {/* Photo */}
@@ -31,7 +31,7 @@ export default function Home() {
             width={0}
             height={0}
             sizes="100vw"
-            className="h-full w-auto"
+            className="h-full w-auto  "
           />
         </div>
       </div>
@@ -48,7 +48,7 @@ export default function Home() {
       <div className="space-y-4">
         <Link
           href="/work"
-          className="flex justify-center selection:inline-block px-6 py-4 bg-black text-white rounded-full hover:bg-gray-900 transition-colors font-medium text-md"
+          className="flex justify-center selection:inline-block px-6 py-2 md:py-4 bg-black text-white rounded-full hover:bg-gray-900 transition-colors font-medium text-md"
         >
           See All Projects
         </Link>

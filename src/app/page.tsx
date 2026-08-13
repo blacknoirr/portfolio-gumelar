@@ -27,7 +27,7 @@ export default function Home() {
         <div className="self-center h-56 md:self-stretch flex-shrink-0">
           <Image
             src="/profile.webp"
-            alt="Gumelar Adi Setia"
+            alt="Foto Gumelar Adi Setia"
             width={300}
             height={300}
             sizes="100vw"
